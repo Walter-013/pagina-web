@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Invitación a tomar una cerveza</h1>
+    <form>
+        <!-- INVITING DATA -->
+        <fieldset>
+            <legend>
+                Datos del invitador
+            </legend>
+            <label>Nombre:
+                <input required type="text" placeholder="O apodo" id="nombre">
+            </label>
+            <label>Dirección:
+                <input type="text" required placeholder="Por si no se acuerda luego">
+            </label>
+            <label>E-mail:
+                <input required type="email" placeholder="pa que?" >
+            </label>
+            <label>Fecha de nacimiento (solo +18):
+                <input required type="date">
+            </label>
+            <label>Telefono:
+                <input required type="text" placeholder="3329-123456">
+            </label>
+            <label>Parentesco:
+                <input list="Parentesco" required placeholder="Amigo, vecino...">
+                <datalist id="Parentesco">
+                    <option value="Amigo"></option>
+                    <option value="Familia"></option>
+                    <option value="Desconocido"></option>
+                    <option value="El que te invita una cerveza siempre es un hermano"></option>
+                    <option value="Otro"></option>
+                </datalist>
+            </label>
+        </fieldset>
+        <!-- INVITATION DATA -->
+        <fieldset>
+                <legend>
+                    Datos de la invitacion:
+                </legend>
+                <div>
+                    <label>Lugar:
+                        <input type="text" required placeholder="Domicilio, plaza, parque, intersección...">
+                    </label>
+                <div>
+                    <label>Fecha de la borrachera en cuestion:
+                        <input type="date" required>
+                    </label>
+                </div>
+                </div>
+                <div>
+                    <label> Marca de cerveza:
+                        <select name="" id="">
+                            <option value="">Stella Artois</option>
+                            <option value="">Brahma</option>
+                            <option value="">Isembeck</option>
+                            <option value="">Quilmes</option>
+                            <option value="">Artesanal</option>
+                            <option value="">Rubia</option>
+                            <option value="">Importada</option>
+                            <option value="">Otra</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label>Excusa:
+                        <input required type="text" placeholder="Hoy cobre">
+                    </label>
+                </div>
+                <div>
+                    <label>Desarrolle:
+                        <textarea rows="4" required>Buen día respetable caballero, espero este disfrutando de una noble jornada, es de mi mas humilde agrado y consideración poder honrarlo en el día de la fecha con una pinta de cerveza a cuenta propia, mi mas afectuoso saludo.</textarea>
+                    </label>
+                </div>
+        </fieldset>
+        <!-- TERMS -->
+        <div class="terms">
+            Acepto los <a class="terms_link" href="terms.html" target="_blank">terminos y condiciones.</a>
+            <input required class="checkbox" type="checkbox">
+        </div>
+        <!-- SUBMIT -->
+        <input class="submit" type="submit" value="INVITAR CERVEZA">
+    </form>
+</body>
+</html>
